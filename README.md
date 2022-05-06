@@ -1,4 +1,20 @@
-# Note Taker
+# Title: Note Taker
+## Table of Contents
+
+[Description](#description)
+
+[Installation](#installation)
+
+[Usage](#usage)
+
+[Licenses](#licenses)
+
+[Contribution](#contribution)
+
+[Contact](#contact)
+
+### Description
+Website where user is able to view their notes, create and save a new note, and delete a note.
 
 AS A small business owner
 I WANT to be able to write and save notes
@@ -17,3 +33,20 @@ WHEN I click on an existing note in the list in the left-hand column
 THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+
+### Installation
+Node, Express
+
+### Usage
+Personal Use
+
+### Licenses
+![GitHub license](https://img.shields.io/badge/license-ISC-blue.svg)
+
+### Contribution
+Anyone
+
+### Contact
+Developer's Name: Hannah Bush
+Developer's Profile (https://github.com/hannahisprogramming)
+Developer's Email: <heb.rutgers@gmail.com>
