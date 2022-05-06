@@ -23,10 +23,20 @@ router.get('/notes/:id', (req, res) => {
 router.post('/notes', (req, res) => {
   let newNote = {
     id: Math.floor(Math.random()* 1000),
-    title : req.body.title,
-    text:req.body.text
+    title: req.body.title,
+    text: req.body.text
   }
   notes.push(newNote)
+  fs.writeFileSync("./db/db.json",JSON.stringify(notes),function(err){
+    if(err) throw err;
+  })
+  res.json(notes);
+});
+
+//delete a note
+router.delete('/notes/:id', (req, res) => {
+  let pendingNotes = notes.filter(element=> element.id != req.params.id);
+  notes = pendingNotes;
   fs.writeFileSync("./db/db.json",JSON.stringify(notes),function(err){
     if(err) throw err;
   })
